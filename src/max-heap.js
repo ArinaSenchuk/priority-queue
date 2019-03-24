@@ -11,6 +11,7 @@ class MaxHeap {
 	push(data, priority) {
 		this.insertNode(new Node(data, priority));
 		this.shiftNodeUp(new Node(data, priority));
+		this.heapSize++;
 	}
 
 	pop() {
@@ -20,6 +21,7 @@ class MaxHeap {
 			let lastRoot = this.detachRoot();
 			this.restoreRootFromLastInsertedNode(lastRoot);
 			this.shiftNodeDown(this.root);
+			this.heapSize--;
 			return lastRoot.data;
 		}
 

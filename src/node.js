@@ -50,8 +50,12 @@ class Node {
 	}
 
 	swapWithParent() {
+		if (!this.parent) {
+			return;
+		} else {
 
-		
+		}
+
 	}
 }
 

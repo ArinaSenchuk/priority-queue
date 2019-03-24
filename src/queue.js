@@ -4,7 +4,6 @@ class PriorityQueue {
 	constructor(maxSize = 30) {
 		this.maxSize = maxSize;
 		this.heap = new MaxHeap();
-
 	}
 
 	push(data, priority) {
@@ -20,7 +19,9 @@ class PriorityQueue {
 		if(this.heap.isEmpty()){
 			throw new Error("The heap is empty!");
 		} else {
-			this.heap.pop();
+
+            return this.heap.pop();
+
 		}
 
 	}
