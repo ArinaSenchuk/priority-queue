@@ -32,8 +32,8 @@ class MaxHeap {
 	}
 
 	restoreRootFromLastInsertedNode(detached) {
-		let lastInserredNose = this.parentNodes[this.parentNodes.length - 1];
-		return lastInserredNose;
+		let lastInsertedNode = this.parentNodes[this.parentNodes.length - 1];
+		return lastInsertedNode;
 	}
 
 	size() {
